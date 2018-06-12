@@ -1,6 +1,21 @@
 git quick reference
 
+#OS
+import os
+
+os.getcwd() -- current dir
+os.chdir('/tmp/')  -- change dir
+
+os.listdir()    -- list content of currect dir
+os.mkdir('newdir')
+os.makedirs('/tmp/newdir')  -- allow multi level (preferable)
+
+os.rmdir('tmp/dir')
+os.remodirs('/tmp/dirs')  --- multi level DANGEROUS
+
+os.rename('old.txt','new.txt')
 
 
-blah blah
-blah 2
+os.stat('demo.txt')
+os.stat('dmo.txt').st_size()
+
