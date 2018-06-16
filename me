@@ -20,3 +20,27 @@ os.stat('dmo.txt').st_size()
 
 #SYS
 xx
+
+
+#SQLITE QUICK
+sqlite3 db1   -> create
+.help
+.tables
+.exit
+
+export to csv
+
+sqlite3 db
+
+>.headers on
+>.mode csv
+>.output x.csv
+>select * from x
+>.quit
+
+
+import
+
+>.mode csv
+>.import c:/x/c.csv items
+>.quit
